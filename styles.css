@@ -5,8 +5,7 @@
 
 nav {
   width: 100vw;
-  height: 60px;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.397);
 }
 
 .nav {
@@ -20,12 +19,12 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0 8vw;
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.411);
 }
 
 .nav-item {
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
 }
 
 li {
@@ -34,5 +33,52 @@ li {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+.main {
+  width: 100vw;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.589);
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: grey;
+  margin: 0 8vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.left {
+  background-color: hotpink;
+  margin: 10px;
+  padding: 10px;
+}
+
+.right {
+  background-color: hotpink;
+  margin: 10px;
+  padding: 10px;
+}
+
+.name {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.face {
+  background-image: url("images/main.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=styles.css.map */
