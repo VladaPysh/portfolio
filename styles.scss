@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100vw;
+  height: 60px;
+  background-color: grey;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 8vw;
+  background-color: green;
+}
+
+.nav-item {
+  margin: 10px;
+  padding: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
