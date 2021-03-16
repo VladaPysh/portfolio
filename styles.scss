@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  font-family: Roboto;
 }
 
 nav {
@@ -33,14 +33,14 @@ a {
 
 .landing {
   width: 100vw;
-  background-color: rgba(128, 128, 128, 0.589);
+  background-color: rgba(128, 128, 128, 0.63);
 }
 
 .landing-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.486);
   margin: 0 8vw;
   flex-wrap: wrap;
 }
@@ -64,11 +64,15 @@ a {
   }
 }
 
-.about {
-  width: 100vw;
-  background-color: rgba(128, 128, 128, 0.589);
+button {
+  margin: 15px 0;
+  padding: 10px 20px;
+}
+
+.about_me {
   h1 {
     text-align: center;
+    padding: 20px;
   }
 }
 
@@ -76,4 +80,11 @@ a {
   background-color: honeydew;
   margin: 0 8vw;
   padding: 10px;
+}
+
+p {
+  padding-top: 15px;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  line-height: 150%;
 }
