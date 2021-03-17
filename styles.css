@@ -5,7 +5,6 @@ body {
 }
 
 nav {
-  width: 100vw;
   background-color: rgba(128, 128, 128, 0.397);
 }
 
@@ -38,7 +37,6 @@ a {
 }
 
 .landing {
-  width: 100vw;
   background-color: rgba(128, 128, 128, 0.63);
 }
 
@@ -74,7 +72,7 @@ a {
 }
 
 .lastname {
-  padding-left: 170px;
+  padding-left: 15vw;
 }
 
 .right {
@@ -88,9 +86,12 @@ a {
   width: 100%;
 }
 
-.button {
-  margin: 15px 0px;
-  padding: 10px 20px;
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 8px 20px;
   border: 1px solid black;
 }
 
@@ -108,16 +109,18 @@ a {
 
 .about {
   background-color: #fff0fc;
+  padding: 15px;
 }
 
-p {
-  padding-left: 8vw;
+.about p {
+  padding-left: 0vw;
   padding-right: 8vw;
-  line-height: 150%;
+  line-height: 140%;
 }
 
 .projects {
   background-color: honeydew;
+  margin: 0 8vw;
 }
 
 .projects h1 {
@@ -125,5 +128,31 @@ p {
   padding: 20px;
   text-align: center;
   background-color: rgba(255, 105, 180, 0.664);
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-item {
+  max-width: 450px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fef0ff;
+}
+
+.item {
+  max-width: 250px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,6 @@ body {
 }
 
 nav {
-  width: 100vw;
   background-color: rgba(128, 128, 128, 0.397);
 }
 
@@ -32,7 +31,6 @@ a {
 }
 
 .landing {
-  width: 100vw;
   background-color: rgba(128, 128, 128, 0.63);
 }
 
@@ -60,7 +58,7 @@ a {
 }
 
 .lastname {
-  padding-left: 170px;
+  padding-left: 15vw;
 }
 
 .right {
@@ -73,9 +71,12 @@ a {
   }
 }
 
-.button {
-  margin: 15px 0px;
-  padding: 10px 20px;
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 8px 20px;
   border: 1px solid black;
 }
 
@@ -92,20 +93,40 @@ a {
 
 .about {
   background-color: rgb(255, 240, 252);
-}
-
-p {
-  padding-left: 8vw;
-  padding-right: 8vw;
-  line-height: 150%;
+  padding: 15px;
+  p {
+    padding-left: 0vw;
+    padding-right: 8vw;
+    line-height: 140%;
+  }
 }
 
 .projects {
   background-color: honeydew;
+  margin: 0 8vw;
   h1 {
     margin: 0;
     padding: 20px;
     text-align: center;
     background-color: rgba(255, 105, 180, 0.664);
   }
+}
+
+.portfolio {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  max-width: 450px;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(254, 240, 255);
+}
+
+.item {
+  max-width: 250px;
 }
