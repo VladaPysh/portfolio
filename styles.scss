@@ -65,7 +65,7 @@ a {
   background-color: rgba(255, 105, 180, 0.486);
   margin: 10px;
   padding: 10px;
-  max-width: 350px;
+  max-width: 300px;
   img {
     width:100%;
   }
@@ -98,6 +98,7 @@ a {
     padding-left: 0vw;
     padding-right: 8vw;
     line-height: 140%;
+    margin: 10px;
   }
 }
 
@@ -129,4 +130,33 @@ a {
 
 .item {
   max-width: 250px;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.p-2 {
+  color: rgba(0, 0, 0, 0.719);
+  transition: color 0.5s ;
+}
+
+#expand {
+  display: inline-block;
+  max-height: 95px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  font-family: Roboto;
+}
+
+#toggle:checked ~ #expand {
+  max-height: 50vh;
+  .p-2 {
+    color: black;
+  }
 }
