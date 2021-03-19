@@ -142,21 +142,28 @@ label:hover {
 }
 
 .p-2 {
-  color: rgba(0, 0, 0, 0.719);
-  transition: color 0.5s ;
+  color: rgba(0, 0, 0, 0.555);
+  transition: color 0.3s ;
+  margin-bottom: 0;
+}
+
+.p-2:hover {
+  color:black;
 }
 
 #expand {
-  display: inline-block;
-  max-height: 95px;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
   font-family: Roboto;
 }
 
-#toggle:checked ~ #expand {
-  max-height: 50vh;
+#toggle:checked ~ label {
   .p-2 {
     color: black;
   }
+}
+
+#toggle:checked ~ #expand {
+  max-height: 400px;
 }
