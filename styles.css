@@ -19,7 +19,7 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0 8vw;
-  background-color: rgba(0, 128, 0, 0.281);
+  background-color: rgba(128, 0, 90, 0.63);
 }
 
 .nav-item {
@@ -44,6 +44,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 80vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,12 +96,13 @@ a {
   border: 1px solid black;
 }
 
-.about_me {
+.content {
   background-color: honeydew;
   margin: 0 8vw;
 }
 
-.about_me h1 {
+.heading {
+  font-size: 1.5rem;
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -113,22 +115,10 @@ a {
 }
 
 .about p {
-  padding-left: 0vw;
+  padding-left: 5vw;
   padding-right: 8vw;
   line-height: 140%;
   margin: 10px;
-}
-
-.projects {
-  background-color: honeydew;
-  margin: 0 8vw;
-}
-
-.projects h1 {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  background-color: rgba(255, 105, 180, 0.664);
 }
 
 .portfolio {
@@ -166,14 +156,15 @@ label:hover {
   cursor: pointer;
 }
 
-.p-2 {
+.p-invisible {
   color: rgba(0, 0, 0, 0.555);
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
   margin-bottom: 0;
+  padding-top: 15px;
 }
 
-.p-2:hover {
+.p-invisible:hover {
   color: black;
 }
 
@@ -185,11 +176,15 @@ label:hover {
   font-family: Roboto;
 }
 
-#toggle:checked ~ label .p-2 {
+#toggle:checked ~ label .p-invisible {
   color: black;
 }
 
 #toggle:checked ~ #expand {
   max-height: 400px;
+}
+
+b {
+  font-weight: 800;
 }
 /*# sourceMappingURL=styles.css.map */

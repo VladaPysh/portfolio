@@ -13,7 +13,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   margin: 0 8vw;
-  background-color: rgba(0, 128, 0, 0.281);
+  background-color: rgba(128, 0, 90, 0.63);
 }
 
 .nav-item {
@@ -36,6 +36,7 @@ a {
 
 .landing-page {
   display: flex;
+  min-height: 80vh;
   align-items: center;
   justify-content: space-between;
   background-color: rgba(128, 128, 128, 0.486);
@@ -80,36 +81,27 @@ a {
   border: 1px solid black;
 }
 
-.about_me {
+.content {
   background-color: honeydew;
   margin: 0 8vw;
-  h1 {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 105, 180, 0.664);
-  }
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 105, 180, 0.664);
 }
 
 .about {
   background-color: rgb(255, 240, 252);
   padding: 15px;
   p {
-    padding-left: 0vw;
+    padding-left: 5vw;
     padding-right: 8vw;
     line-height: 140%;
     margin: 10px;
-  }
-}
-
-.projects {
-  background-color: honeydew;
-  margin: 0 8vw;
-  h1 {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 105, 180, 0.664);
   }
 }
 
@@ -141,13 +133,14 @@ label:hover {
   cursor: pointer;
 }
 
-.p-2 {
+.p-invisible {
   color: rgba(0, 0, 0, 0.555);
   transition: color 0.3s ;
   margin-bottom: 0;
+  padding-top: 15px;
 }
 
-.p-2:hover {
+.p-invisible:hover {
   color:black;
 }
 
@@ -159,11 +152,15 @@ label:hover {
 }
 
 #toggle:checked ~ label {
-  .p-2 {
+  .p-invisible {
     color: black;
   }
 }
 
 #toggle:checked ~ #expand {
   max-height: 400px;
+}
+
+b {
+  font-weight: 800;
 }
