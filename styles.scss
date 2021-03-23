@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto;
+  background-color:#dae8e831;
 }
 
 nav {
-  background-color: rgba(128, 128, 128, 0.397);
+  background-color:#dae8e85b;
 }
 
 .nav {
@@ -13,7 +14,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
   margin: 0 8vw;
-  background-color: rgba(128, 0, 90, 0.63);
+  background-color:transparent;
 }
 
 .nav-item {
@@ -31,7 +32,7 @@ a {
 }
 
 .landing {
-  background-color: rgba(128, 128, 128, 0.63);
+  background-color: transparent;
 }
 
 .landing-page {
@@ -39,13 +40,13 @@ a {
   min-height: 80vh;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(128, 128, 128, 0.486);
+  background-color:transparent;
   margin: 0 8vw;
   flex-wrap: wrap;
 }
 
 .left {
-  background-color: rgba(255, 105, 180, 0.39);
+  background-color:transparent;
   margin: 10px;
   padding: 10px;
   h1 {
@@ -63,7 +64,7 @@ a {
 }
 
 .right {
-  background-color: rgba(255, 105, 180, 0.486);
+  background-color:transparent;
   margin: 10px;
   padding: 10px;
   max-width: 300px;
@@ -82,7 +83,7 @@ a {
 }
 
 .content {
-  background-color: honeydew;
+  background-color:transparent;
   margin: 0 8vw;
 }
 
@@ -91,11 +92,11 @@ a {
   margin: 0;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255, 105, 180, 0.664);
+  background-color:#dae8e8;
 }
 
 .about {
-  background-color: rgb(255, 240, 252);
+  background-color:transparent;
   padding: 15px;
   p {
     padding-left: 5vw;
@@ -117,7 +118,7 @@ a {
   max-width: 450px;
   margin: 10px;
   padding: 15px;
-  background-color: rgb(254, 240, 255);
+  background-color:transparent;
 }
 
 .item {
