@@ -55,16 +55,14 @@ a {
 
 .firstname {
   position: relative;
-  animation-name: first;
-  animation-duration: 3s;
+  animation: first 3s ease;
   animation-fill-mode: forwards;
 }
 
 .lastname {
   padding-left: 15vw;
   position: relative;
-  animation-name: last;
-  animation-duration: 3s;
+  animation: last 3s ease;
   animation-fill-mode: forwards;
 }
 
@@ -75,8 +73,7 @@ a {
   img {
     width: 100%;
     position: relative;
-    animation-name: appear;
-    animation-duration: 3s;
+    animation: appear 3s ease-in;
     animation-fill-mode: forwards;
   }
 }
@@ -157,7 +154,7 @@ label:hover {
 
 .p-invisible {
   color: rgba(0, 0, 0, 0.555);
-  transition: color 0.3s ;
+  transition: color 0.3s;
   margin-bottom: 0;
   padding-top: 15px;
 }
@@ -263,5 +260,42 @@ b {
   }
   to {
     opacity: 100%;
+  }
+}
+
+.animation {  
+  position: absolute;
+  left: 100%;
+  height: 115px;
+  width: 105px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #dae8e888, #a0d6e060); 
+  animation: animate 23s linear 3s infinite;
+}
+
+@keyframes animate{
+  0% {
+    transform: translateY(0%);
+    left: 100%;
+  }
+
+  25% {
+    transform: translateY(+410%);
+    left: 50%;
+  }
+
+  50% {
+    transform: translateY(0%);
+    left: 0%;
+  }
+
+  75% {
+    transform: translateY(+410%);
+    left: 50%;
+  }
+
+  100% {
+    transform: translateY(0%);
+    left: 100%;
   }
 }

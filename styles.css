@@ -71,10 +71,8 @@ a {
 
 .firstname {
   position: relative;
-  -webkit-animation-name: first;
-          animation-name: first;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation: first 3s ease;
+          animation: first 3s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -82,10 +80,8 @@ a {
 .lastname {
   padding-left: 15vw;
   position: relative;
-  -webkit-animation-name: last;
-          animation-name: last;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation: last 3s ease;
+          animation: last 3s ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -99,10 +95,8 @@ a {
 .right img {
   width: 100%;
   position: relative;
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation: appear 3s ease-in;
+          animation: appear 3s ease-in;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -330,6 +324,74 @@ b {
   }
   to {
     opacity: 100%;
+  }
+}
+
+.animation {
+  position: absolute;
+  left: 100%;
+  height: 115px;
+  width: 105px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, right top, left top, from(#dae8e888), to(#a0d6e060));
+  background: linear-gradient(to left, #dae8e888, #a0d6e060);
+  -webkit-animation: animate 23s linear 3s infinite;
+          animation: animate 23s linear 3s infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 100%;
+  }
+  25% {
+    -webkit-transform: translateY(410%);
+            transform: translateY(410%);
+    left: 50%;
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 0%;
+  }
+  75% {
+    -webkit-transform: translateY(410%);
+            transform: translateY(410%);
+    left: 50%;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 100%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 100%;
+  }
+  25% {
+    -webkit-transform: translateY(410%);
+            transform: translateY(410%);
+    left: 50%;
+  }
+  50% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 0%;
+  }
+  75% {
+    -webkit-transform: translateY(410%);
+            transform: translateY(410%);
+    left: 50%;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
