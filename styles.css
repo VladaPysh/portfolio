@@ -121,6 +121,7 @@ a:hover {
   border: 1px solid transparent;
   background-color: #21dad0a9;
   margin-right: 10px;
+  outline: none;
 }
 
 .btn-2 {
