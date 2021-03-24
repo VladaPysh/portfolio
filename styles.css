@@ -24,7 +24,7 @@ nav {
 
 .nav-item {
   margin: 10px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .nav-item a {
@@ -44,7 +44,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 90vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -89,7 +89,7 @@ a {
 .right {
   margin: 10px;
   padding: 10px;
-  max-width: 300px;
+  max-width: 330px;
 }
 
 .right img {
@@ -236,7 +236,7 @@ b {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 910px) {
   .landing-page {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -333,10 +333,11 @@ b {
   height: 115px;
   width: 105px;
   border-radius: 50%;
+  z-index: -1;
   background: -webkit-gradient(linear, right top, left top, from(#dae8e888), to(#a0d6e060));
   background: linear-gradient(to left, #dae8e888, #a0d6e060);
-  -webkit-animation: animate 23s linear 3s infinite;
-          animation: animate 23s linear 3s infinite;
+  -webkit-animation: animate 20s linear 3s infinite;
+          animation: animate 20s linear 3s infinite;
 }
 
 @-webkit-keyframes animate {
@@ -346,9 +347,9 @@ b {
     left: 100%;
   }
   25% {
-    -webkit-transform: translateY(410%);
-            transform: translateY(410%);
-    left: 50%;
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    left: 55%;
   }
   50% {
     -webkit-transform: translateY(0%);
@@ -356,9 +357,9 @@ b {
     left: 0%;
   }
   75% {
-    -webkit-transform: translateY(410%);
-            transform: translateY(410%);
-    left: 50%;
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    left: 40%;
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -374,9 +375,9 @@ b {
     left: 100%;
   }
   25% {
-    -webkit-transform: translateY(410%);
-            transform: translateY(410%);
-    left: 50%;
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    left: 55%;
   }
   50% {
     -webkit-transform: translateY(0%);
@@ -384,9 +385,9 @@ b {
     left: 0%;
   }
   75% {
-    -webkit-transform: translateY(410%);
-            transform: translateY(410%);
-    left: 50%;
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+    left: 40%;
   }
   100% {
     -webkit-transform: translateY(0%);
