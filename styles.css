@@ -2,11 +2,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto;
-  background-color: #dae8e831;
+  color: #012b29;
+  background-color: #dae8e87a;
+}
+
+h1 {
+  font-family: Lato;
+  font-weight: 900;
 }
 
 nav {
   background-color: #dae8e8c4;
+  border-bottom: 1px solid #21dad0a9;
 }
 
 .nav {
@@ -37,7 +44,11 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #012b29;
+}
+
+a:hover {
+  color: #027c76;
 }
 
 .landing-page {
@@ -131,6 +142,7 @@ a {
   padding: 20px;
   text-align: center;
   background-color: #dae8e8;
+  border: 1px solid #21dad0a9;
 }
 
 .about {
@@ -340,6 +352,19 @@ b {
           animation: animate 20s linear 3s infinite;
 }
 
+.animate {
+  position: absolute;
+  left: -10%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  background: -webkit-gradient(linear, right top, left top, from(#dae8e888), to(#a0d6e060));
+  background: linear-gradient(to left, #dae8e888, #a0d6e060);
+  -webkit-animation: animate_2 15s linear 3s infinite;
+          animation: animate_2 15s linear 3s infinite;
+}
+
 @-webkit-keyframes animate {
   0% {
     -webkit-transform: translateY(0%);
@@ -392,6 +417,52 @@ b {
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes animate_2 {
+  0% {
+    -webkit-transform: translateY(800%);
+            transform: translateY(800%);
+    left: 0%;
+  }
+  33% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 45%;
+  }
+  66% {
+    -webkit-transform: translateY(1250%);
+            transform: translateY(1250%);
+    left: 75%;
+  }
+  100% {
+    -webkit-transform: translateY(800%);
+            transform: translateY(800%);
+    left: 100%;
+  }
+}
+
+@keyframes animate_2 {
+  0% {
+    -webkit-transform: translateY(800%);
+            transform: translateY(800%);
+    left: 0%;
+  }
+  33% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    left: 45%;
+  }
+  66% {
+    -webkit-transform: translateY(1250%);
+            transform: translateY(1250%);
+    left: 75%;
+  }
+  100% {
+    -webkit-transform: translateY(800%);
+            transform: translateY(800%);
     left: 100%;
   }
 }
