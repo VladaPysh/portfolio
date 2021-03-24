@@ -53,7 +53,7 @@ a {
   margin: 10px;
   padding: 10px;
   h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -188,6 +188,9 @@ b {
 }
 
 @media screen and (max-width: 800px) {
+  .landing-page {
+    justify-content: center;
+  }
   .right {
     max-width: 250px;
   }
@@ -203,7 +206,7 @@ b {
     margin: 0 3vw;
   }
   .nav-item {
-    padding: 5px;
+    padding: 8px 5px;
   }
   .left {
     h1 {
@@ -213,4 +216,39 @@ b {
   #toggle:checked ~ #expand {
     max-height: 750px;
   }
+}
+
+@keyframes first {
+  from {
+      left: -50%;
+      opacity: 0%;
+  }
+  to {
+      left: 0%;
+      opacity: 100%;
+  }
+}
+
+@keyframes last {
+  from {
+    left: 50%;
+    opacity: 0%;
+  }
+  to {
+    left: 0%;
+    opacity: 100%;
+  }
+}
+.firstname {
+  position: relative;
+  animation-name: first;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.lastname {
+  position: relative;
+  animation-name: last;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
