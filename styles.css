@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #dae8e85b;
+  background-color: #dae8e8c4;
 }
 
 .nav {
@@ -20,7 +20,6 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 0 8vw;
-  background-color: transparent;
 }
 
 .nav-item {
@@ -41,10 +40,6 @@ a {
   color: black;
 }
 
-.landing {
-  background-color: transparent;
-}
-
 .landing-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,14 +51,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: transparent;
   margin: 0 8vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .left {
-  background-color: transparent;
   margin: 10px;
   padding: 10px;
 }
@@ -72,17 +65,32 @@ a {
   font-size: 3rem;
 }
 
+.left h4 {
+  padding-bottom: 10px;
+}
+
 .firstname {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  -webkit-animation-name: first;
+          animation-name: first;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .lastname {
   padding-left: 15vw;
+  position: relative;
+  -webkit-animation-name: last;
+          animation-name: last;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .right {
-  background-color: transparent;
   margin: 10px;
   padding: 10px;
   max-width: 300px;
@@ -90,19 +98,36 @@ a {
 
 .right img {
   width: 100%;
+  position: relative;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .buttons {
-  margin: 20px 0;
+  margin: 0;
 }
 
 .btn {
-  padding: 8px 20px;
-  border: 1px solid black;
+  padding: 8px 25px;
+  border: 1px solid transparent;
+  background-color: #21dad0a9;
+  margin-right: 10px;
+}
+
+.btn-2 {
+  background-color: #21dad115;
+  border: 1px solid #18cac1a9;
+}
+
+.btn:hover {
+  background-color: #56f3f3;
 }
 
 .content {
-  background-color: transparent;
   margin: 0 8vw;
 }
 
@@ -115,7 +140,6 @@ a {
 }
 
 .about {
-  background-color: transparent;
   padding: 15px;
 }
 
@@ -143,12 +167,16 @@ a {
 
 .project-item {
   max-width: 450px;
-  margin: 10px;
-  padding: 15px;
+  margin: 15px;
+  padding: 25px;
   background-color: transparent;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
+  border-radius: 5px;
+  background-color: #dae8e888;
+  -webkit-box-shadow: 0 0 10px #dae8e883;
+          box-shadow: 0 0 10px #dae8e883;
 }
 
 .item {
@@ -287,23 +315,21 @@ b {
   }
 }
 
-.firstname {
-  position: relative;
-  -webkit-animation-name: first;
-          animation-name: first;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+@-webkit-keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
-.lastname {
-  position: relative;
-  -webkit-animation-name: last;
-          animation-name: last;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

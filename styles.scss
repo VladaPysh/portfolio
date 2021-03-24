@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color:#dae8e85b;
+  background-color:#dae8e8c4;
 }
 
 .nav {
@@ -14,7 +14,6 @@ nav {
   align-items: center;
   justify-content: flex-end;
   margin: 0 8vw;
-  background-color:transparent;
 }
 
 .nav-item {
@@ -31,11 +30,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
-}
-
-.landing {
-  background-color: transparent;
+  color:black;
 }
 
 .landing-page {
@@ -43,50 +38,70 @@ a {
   min-height: 80vh;
   align-items: center;
   justify-content: space-between;
-  background-color:transparent;
   margin: 0 8vw;
   flex-wrap: wrap;
 }
 
 .left {
-  background-color:transparent;
   margin: 10px;
   padding: 10px;
   h1 {
     font-size: 3rem;
   }
+  h4 {
+    padding-bottom: 10px;
+  }
 }
 
 .firstname {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  animation-name: first;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .lastname {
   padding-left: 15vw;
+  position: relative;
+  animation-name: last;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .right {
-  background-color:transparent;
   margin: 10px;
   padding: 10px;
   max-width: 300px;
   img {
-    width:100%;
+    width: 100%;
+    position: relative;
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
   }
 }
 
 .buttons {
-  margin: 20px 0;
+  margin: 0;
 }
 
 .btn {
-  padding: 8px 20px;
-  border: 1px solid black;
+  padding: 8px 25px;
+  border: 1px solid transparent;
+  background-color: #21dad0a9;
+  margin-right: 10px;
+}
+
+.btn-2 {
+  background-color: #21dad115;
+  border: 1px solid #18cac1a9;
+}
+
+.btn:hover {
+  background-color: #56f3f3;
 }
 
 .content {
-  background-color:transparent;
   margin: 0 8vw;
 }
 
@@ -99,7 +114,6 @@ a {
 }
 
 .about {
-  background-color:transparent;
   padding: 15px;
   p {
     padding-left: 5vw;
@@ -119,10 +133,13 @@ a {
 
 .project-item {
   max-width: 450px;
-  margin: 10px;
-  padding: 15px;
+  margin: 15px;
+  padding: 25px;
   background-color:transparent;
   flex: auto;
+  border-radius: 5px;
+  background-color:#dae8e888;
+  box-shadow: 0 0 10px #dae8e883; 
 }
 
 .item {
@@ -239,16 +256,12 @@ b {
     opacity: 100%;
   }
 }
-.firstname {
-  position: relative;
-  animation-name: first;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
 
-.lastname {
-  position: relative;
-  animation-name: last;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+@keyframes appear{
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
