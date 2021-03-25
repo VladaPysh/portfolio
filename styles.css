@@ -12,8 +12,10 @@ h1 {
 }
 
 nav {
-  background-color: #dae8e8c4;
-  border-bottom: 1px solid #21dad0a9;
+  background: #dae8e8;
+  background: linear-gradient(20deg, rgba(218, 232, 232, 0.500438) 0%, rgba(176, 97, 210, 0.503239) 55%, rgba(33, 218, 208, 0.500438) 100%);
+  -webkit-box-shadow: 0 0 5px #21dad160;
+          box-shadow: 0 0 5px #21dad160;
 }
 
 .nav {
@@ -48,7 +50,8 @@ a {
 }
 
 a:hover {
-  color: #027c76;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .landing-page {
@@ -68,8 +71,8 @@ a:hover {
 }
 
 .left {
-  margin: 10px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
 }
 
 .left h1 {
@@ -116,21 +119,27 @@ a:hover {
   margin: 0;
 }
 
-.btn {
-  padding: 8px 25px;
-  border: 1px solid transparent;
-  background-color: #21dad0a9;
+.button {
+  padding: 10px 25px;
+  border-radius: 5px;
   margin-right: 10px;
   outline: none;
 }
 
-.btn-2 {
-  background-color: #21dad115;
-  border: 1px solid #18cac1a9;
+.b_1 {
+  background: radial-gradient(circle, rgba(203, 109, 243, 0.945) 0%, rgba(205, 148, 230, 0.603) 100%);
 }
 
-.btn:hover {
-  background-color: #56f3f3;
+.b_2 {
+  background-color: #21dad12d;
+}
+
+.b_2:hover {
+  background-color: #21dad1af;
+}
+
+.b_1:hover {
+  background: radial-gradient(circle, #cd94e6 0%, #58e6de 100%);
 }
 
 .content {
@@ -142,8 +151,10 @@ a:hover {
   margin: 0;
   padding: 20px;
   text-align: center;
-  background-color: #dae8e8;
-  border: 1px solid #21dad0a9;
+  background: #dae8e8;
+  background: linear-gradient(20deg, rgba(218, 232, 232, 0.500438) 0%, rgba(176, 97, 210, 0.445) 55%, rgba(33, 218, 209, 0.445) 100%);
+  -webkit-box-shadow: 0 0 5px #21dad160;
+          box-shadow: 0 0 5px #21dad160;
 }
 
 .about {
