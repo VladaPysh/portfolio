@@ -4,7 +4,7 @@ AOS.init({
   once: true
 })
 
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("nav a, .landing-page a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
