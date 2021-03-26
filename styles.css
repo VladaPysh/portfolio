@@ -260,7 +260,11 @@ b {
 }
 
 .contact_item {
-  padding: 50px;
+  margin: 12vh;
+}
+
+.footer {
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 1400px) {
@@ -369,20 +373,20 @@ b {
 
 .animation-1 {
   position: absolute;
-  left: 100%;
+  opacity: 0;
   height: 115px;
   width: 105px;
   border-radius: 50%;
   z-index: -1;
   background: -webkit-gradient(linear, right top, left top, from(#dae8e888), to(#a0d6e060));
   background: linear-gradient(to left, #dae8e888, #a0d6e060);
-  -webkit-animation: animate 20s linear 3s infinite;
-          animation: animate 20s linear 3s infinite;
+  -webkit-animation: animate 15s linear 3s infinite;
+          animation: animate 15s linear 3s infinite;
 }
 
 .animation-2 {
   position: absolute;
-  left: -10%;
+  opacity: 0;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -395,27 +399,28 @@ b {
 
 .animation-3 {
   position: absolute;
-  left: -10%;
+  opacity: 0;
   height: 35px;
   width: 35px;
   border-radius: 50%;
   z-index: -1;
   background: -webkit-gradient(linear, right top, left top, from(#dae8e888), to(#a0d6e060));
   background: linear-gradient(to left, #dae8e888, #a0d6e060);
-  -webkit-animation: animate_3 25s linear 3s infinite;
-          animation: animate_3 25s linear 3s infinite;
+  -webkit-animation: animate_3 20s linear 3s infinite;
+          animation: animate_3 20s linear 3s infinite;
 }
 
 @-webkit-keyframes animate {
   0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    left: 90%;
+    opacity: 100%;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+    left: 80%;
   }
   25% {
     -webkit-transform: translateY(500%);
             transform: translateY(500%);
-    left: 55%;
+    left: 25%;
   }
   50% {
     -webkit-transform: translateY(0%);
@@ -428,22 +433,23 @@ b {
     left: 40%;
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    left: 90%;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+    left: 80%;
   }
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    left: 90%;
+    opacity: 100%;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+    left: 80%;
   }
   25% {
     -webkit-transform: translateY(500%);
             transform: translateY(500%);
-    left: 55%;
+    left: 25%;
   }
   50% {
     -webkit-transform: translateY(0%);
@@ -456,14 +462,15 @@ b {
     left: 40%;
   }
   100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    left: 90%;
+    -webkit-transform: translateY(300%);
+            transform: translateY(300%);
+    left: 80%;
   }
 }
 
 @-webkit-keyframes animate_2 {
   0% {
+    opacity: 100%;
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
     left: 0%;
@@ -481,12 +488,13 @@ b {
   100% {
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
-    left: 98%;
+    left: 0%;
   }
 }
 
 @keyframes animate_2 {
   0% {
+    opacity: 100%;
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
     left: 0%;
@@ -504,12 +512,13 @@ b {
   100% {
     -webkit-transform: translateY(800%);
             transform: translateY(800%);
-    left: 98%;
+    left: 0%;
   }
 }
 
 @-webkit-keyframes animate_3 {
   0% {
+    opacity: 100%;
     -webkit-transform: translateY(1800%);
             transform: translateY(1800%);
     left: 0%;
@@ -517,12 +526,12 @@ b {
   33% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    left: 75%;
+    left: 85%;
   }
   66% {
     -webkit-transform: translateY(1900%);
             transform: translateY(1900%);
-    left: 90%;
+    left: 70%;
   }
   100% {
     -webkit-transform: translateY(800%);
@@ -533,6 +542,7 @@ b {
 
 @keyframes animate_3 {
   0% {
+    opacity: 100%;
     -webkit-transform: translateY(1800%);
             transform: translateY(1800%);
     left: 0%;
@@ -540,12 +550,12 @@ b {
   33% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    left: 75%;
+    left: 85%;
   }
   66% {
     -webkit-transform: translateY(1900%);
             transform: translateY(1900%);
-    left: 90%;
+    left: 70%;
   }
   100% {
     -webkit-transform: translateY(800%);
