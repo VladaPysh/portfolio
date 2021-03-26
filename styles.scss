@@ -294,7 +294,7 @@ b {
   0% {
     opacity: 100%;
     transform: translateY(300%);
-    left: 80%;
+    left: 70%;
   }
 
   25% {
@@ -313,8 +313,9 @@ b {
   }
 
   100% {
+    opacity: 100%;
     transform: translateY(300%);
-    left: 80%;
+    left: 70%;
   }
 }
 
@@ -336,6 +337,7 @@ b {
   }
 
   100% {
+    opacity: 100%;
     transform: translateY(+800%);
     left: 0%;
   }
@@ -359,6 +361,7 @@ b {
   }
 
   100% {
+    opacity: 100%;
     transform: translateY(+800%);
     left: 0%;
   }
