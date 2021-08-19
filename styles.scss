@@ -414,15 +414,14 @@ b {
     padding: 1vh;
   }
 }
-.portfolio {
+.portfolio_objects {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
   flex-wrap: wrap;
 }
 .portfolio_item {
-  max-width: 45vw;
+  max-width: 50%;
   cursor: pointer;
   background: rgba(176, 97, 210, 0.233) 55%;
   position: relative;
@@ -439,7 +438,7 @@ b {
   right:0;
   top: 100%;
   height:0;
-  width: 45vw;
+  width: 100%;
   overflow: hidden;
   transition: .5s ease;
   background: linear-gradient(40deg, rgba(218,232,232,0.500437675070028) 0%, rgba(176, 97, 210, 0.384) 45%, rgba(33, 218, 209, 0.281) 100%);
@@ -465,4 +464,12 @@ b {
     height: 100%;
     opacity: 0.7;
   }
-}  
+}
+@media screen and (max-width: 550px) {
+  .portfolio_item {
+    max-width: 100%;
+  }
+  .overlay-bottom-slide {
+    width: 100%;
+  }
+}
