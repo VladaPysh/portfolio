@@ -21,18 +21,27 @@ function clickHandler(e) {
   });
 }
 
-document.body.onclick = function() {
-  document.querySelector("#carouselPortfolio").style.display = "none";
-};
+// Shows one page and hides the other two
+function showPage(page) {
 
-document.querySelector("#portfolio_item_1").addEventListener("click", function(){
-  document.querySelector("#carouselPortfolio").style.display = "block";
-});
-
-var els = document.querySelectorAll("#carouselPortfolio, #portfolio_item_1");
-// When clicking on these elements don't hide the popup
-for (var i = 0; i < els.length; i++) {
-  els[i].addEventListener("click", function(e) {
-    e.stopPropagation();
+  // Hide all of the divs:
+  document.querySelectorAll('.carousel').forEach(function(div) {
+      div.style.display = 'none';
   });
+
+  // Show the div provided in the argument
+  document.querySelector(`#${page}`).style.display = 'block';
 }
+
+// Wait for page to loaded:
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Select all buttons
+  document.querySelectorAll('.portfolio_item').forEach(function(button) {
+
+      // When a button is clicked, switch to that page
+      button.onclick = function() {
+          showPage(this.dataset.page);
+      }
+  })
+});

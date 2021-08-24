@@ -62,18 +62,18 @@
    
     <h1 class="heading" id="portfolio">Portfolio</h1>
     <section class="portfolio_objects">
-      <div class="portfolio_item" id="portfolio_item_1">
+      <div data-page="page1" class="portfolio_item">
         <img class="portfolio_img" src="images/premiumoverhead.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Design: logo, poster, business card, website; web-development.</div>
         </div>
       </div>
-      <div id="carouselPortfolio" class="carousel slide" data-bs-ride="carousel">
+      <div id="page1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#page1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#page1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#page1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#page1" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -99,84 +99,43 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#page1" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#page1" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="portfolio_item">
+      <div data-page="page2" class="portfolio_item" id="portfolio_item_2">
         <img class="portfolio_img" src="images/rockspace.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Design: poster, business card, creatives, website; web-development.</div>
         </div>
       </div>
-      <div class="portfolio_item">
+      <div data-page="page3" class="portfolio_item">
         <img class="portfolio_img" src="images/auctions.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Web-design and development.</div>
         </div>
       </div>
-      <div class="portfolio_item">
+      <div data-page="page4" class="portfolio_item">
         <img class="portfolio_img" src="images/chateo.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Web-design and development.</div>
         </div>
       </div>
-      <div class="portfolio_item">
+      <div data-page="page5" class="portfolio_item">
         <img class="portfolio_img" src="images/wiki.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Web-design and development.</div>
         </div>
       </div>
-      <div class="portfolio_item">
+      <div data-page="page6" class="portfolio_item">
         <img class="portfolio_img" src="images/ecochoice.jpg">
         <div class="overlay-bottom-slide">
           <div class="text">Design: business card.</div>
-        </div>
-      </div>
-    </section>
-    <section class="landing">
-      <div class="content">
-        <div class="portfolio">
-          <div class="project-item" data-aos="fade-in" data-aos-delay="400">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/M9S0FDmIW3M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="description">Wiki is a Wikipedia-like encyclopedia, which allows users to search, create or modify an encyclopedia entry. Show complete list of entries or display a random one. Stack: Django, Python, CSS and HTML.</p>
-            <div class="buttons">
-              <a class="button b_1" href="https://github.com/VladaPysh/Wiki">Github</a>
-            </div>
-          </div>
-          <div class="project-item" data-aos="fade-in" data-aos-delay="800">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/BinZOXTGBFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="description">An eBay-like e-commerce auction site that allows users to post auction listings, place bids on listings, comment on those listings, and add listings to a “watchlist”. Stack: Django, Python, SASS, HTML, Bootstrap</p>
-            <div class="buttons">
-              <a class="button b_1" href="https://github.com/VladaPysh/Commerce">Github</a>
-            </div>
-          </div>
-          <div class="project-item" data-aos="fade-in" data-aos-delay="1200">
-            <img class="item" src="images/chatapp.jpg" alt="project">
-            <p class="description">A front-end for a chatapp: designed with Figma and build using HTML, SASS, Bootstrap.</p>
-            <div class="buttons">
-              <a class="button b_1" href="https://github.com/VladaPysh/Chateo">Github</a>
-              <a class="button b_2" href="https://vladapysh.github.io/Chateo/">Demo</a>
-            </div>
-          </div>
-          <div class="project-item" data-aos="fade-in" data-aos-delay="1600">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/sgi_DGCnyCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="description">A front-end for Google Search, Google Image Search, and Google Advanced Search.</p>
-            <div class="buttons">
-              <a class="button b_1" href="https://github.com/VladaPysh/Search">Github</a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
