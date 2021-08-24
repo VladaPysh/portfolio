@@ -37,11 +37,11 @@ function showPage(page) {
 document.addEventListener('DOMContentLoaded', function() {
 
   // Select all buttons
-  document.querySelectorAll('.portfolio_item').forEach(function(button) {
+  if (document.querySelectorAll('.portfolio_item').forEach(function(button) {
 
       // When a button is clicked, switch to that page
       button.onclick = function() {
           showPage(this.dataset.page);
       }
-  })
+  }));
 });
