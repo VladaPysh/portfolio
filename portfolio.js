@@ -44,4 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
           showPage(this.dataset.page);
       }
   }));
+  else if (document.querySelectorAll('.landing').forEach(function(body) {
+    body.onclick = function() {
+      document.querySelectorAll('.carousel').forEach(function(div) {
+        div.style.display = 'none';
+    })}
+  }));
 });
