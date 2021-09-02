@@ -132,7 +132,7 @@ a:hover {
 }
 
 .b_2 {
-  background-color: #027a74;
+  background-color: #15aaa3;
   font-size: 1.2rem;
   color: white;
 }
@@ -199,39 +199,6 @@ a:hover {
 
 .item {
   width: 100%;
-}
-
-label:hover {
-  cursor: pointer;
-}
-
-.p-invisible {
-  color: rgba(0, 0, 0, 0.555);
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-  margin-bottom: 0;
-  padding-top: 15px;
-}
-
-.p-invisible:hover {
-  color: black;
-}
-
-#expand {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-  font-family: Roboto;
-}
-
-b {
-  font-weight: 800;
-}
-
-.description {
-  padding-top: 15px;
-  min-height: 80px;
 }
 
 .contact {
@@ -666,10 +633,10 @@ b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 90vw;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  max-width: 70vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

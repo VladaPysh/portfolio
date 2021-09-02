@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
           showPage(this.dataset.page);
       }
   }));
-  if (document.querySelectorAll('.landing, .heading').forEach(function(body) {
+  else if (document.querySelectorAll('.landing, .heading, .close').forEach(function(body) {
     body.onclick = function() {
       document.querySelectorAll('.carousel').forEach(function(div) {
         div.style.display = 'none';
