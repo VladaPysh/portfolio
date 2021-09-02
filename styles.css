@@ -127,15 +127,19 @@ a:hover {
 }
 
 .b_1 {
-  background: radial-gradient(circle, rgba(205, 148, 230, 0.603) 0%, rgba(203, 109, 243, 0.815) 100%);
+  background: radial-gradient(circle, rgba(205, 148, 230, 0.452) 0%, rgba(203, 109, 243, 0.479) 100%);
+  font-size: 1.2rem;
 }
 
 .b_2 {
-  background-color: #21dad12d;
+  background-color: #027a74;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .b_2:hover {
-  background-color: #21dad1af;
+  background-color: #21dad179;
+  color: #012b29;
 }
 
 .b_1:hover {
