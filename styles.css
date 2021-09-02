@@ -76,7 +76,7 @@ a:hover {
 }
 
 .left h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .left h4 {
@@ -147,7 +147,7 @@ a:hover {
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -197,11 +197,6 @@ a:hover {
   width: 100%;
 }
 
-input {
-  display: none;
-  visibility: hidden;
-}
-
 label:hover {
   cursor: pointer;
 }
@@ -224,14 +219,6 @@ label:hover {
   -webkit-transition: max-height 0.5s;
   transition: max-height 0.5s;
   font-family: Roboto;
-}
-
-#toggle:checked ~ label .p-invisible {
-  color: black;
-}
-
-#toggle:checked ~ #expand {
-  max-height: 400px;
 }
 
 b {
@@ -566,9 +553,6 @@ b {
   .left h4 {
     font-size: 1.3rem;
   }
-  #toggle:checked ~ #expand {
-    max-height: 750px;
-  }
   .contact_item {
     padding: 1vh;
   }
@@ -672,5 +656,57 @@ b {
   #page1, #page2, #page3, #page4, #page5, #page6 {
     min-width: 100vw;
   }
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.services h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.services h6 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.developer {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(40deg, rgba(218, 232, 232, 0.500438) 0%, rgba(176, 97, 210, 0.151) 45%, rgba(33, 218, 209, 0.281) 100%);
+  -webkit-box-shadow: 0 0 15px rgba(3, 37, 36, 0.26);
+          box-shadow: 0 0 15px rgba(3, 37, 36, 0.26);
+  margin: 10px;
+}
+
+.designer {
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(40deg, rgba(218, 232, 232, 0.500438) 0%, rgba(176, 97, 210, 0.151) 45%, rgba(33, 218, 209, 0.281) 100%);
+  -webkit-box-shadow: 0 0 15px rgba(3, 37, 36, 0.26);
+          box-shadow: 0 0 15px rgba(3, 37, 36, 0.26);
+  margin: 10px;
+}
+
+.form {
+  max-width: 450px;
+  margin: auto;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
