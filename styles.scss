@@ -424,7 +424,17 @@ a:hover {
   .carousel-item {
     img {
       max-width: 100%;
+      margin-bottom: 10px;
     }
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
+}
+.carousel-item {
+  h6:hover {
+    color: black;
+    text-decoration: underline;
   }
 }
 
@@ -439,7 +449,8 @@ a:hover {
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   z-index: 3;
-  background: rgba(0, 18, 53, 0.849);
+  background: rgba(255, 255, 255, 0.849);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 550px) {
@@ -497,9 +508,14 @@ a:hover {
 }
 .close {
   float: right; 
-  color:white;
   padding: 5px;
 }
 .carousel-control-next {
   margin-top: 5%;
+}
+.btn-primary {
+  background-color: #15aaa3;
+}
+.btn-primary:hover {
+  background-color: #044b46;
 }
