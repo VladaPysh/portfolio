@@ -680,4 +680,14 @@ a:hover {
   margin: auto;
   padding-top: 20px;
 }
+
+.close {
+  float: right;
+  color: white;
+  padding: 5px;
+}
+
+.carousel-control-next {
+  margin-top: 5%;
+}
 /*# sourceMappingURL=styles.css.map */

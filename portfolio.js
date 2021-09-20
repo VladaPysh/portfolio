@@ -44,10 +44,22 @@ document.addEventListener('DOMContentLoaded', function() {
           showPage(this.dataset.page);
       }
   }));
-  else if (document.querySelectorAll('.landing, .heading, .close').forEach(function(body) {
+  else if (document.querySelectorAll('.landing, .heading').forEach(function(body) {
     body.onclick = function() {
       document.querySelectorAll('.carousel').forEach(function(div) {
         div.style.display = 'none';
     })}
+  }));
+});
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Select all buttons
+  if (document.querySelectorAll('.close').forEach(function(button) {
+
+      // When a button is clicked, switch to that page
+      button.onclick = function() {
+        document.querySelectorAll('.carousel').forEach(function(div) {
+          div.style.display = 'none';
+        })};
   }));
 });
