@@ -609,7 +609,7 @@ a:hover {
   text-decoration: underline;
 }
 
-#page1, #page2, #page3, #page4, #page5, #page6 {
+#page0, #page1, #page2, #page3, #page4, #page5, #page6 {
   display: none;
   min-width: 85vw;
   text-align: center;
@@ -645,9 +645,9 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   max-width: 70vw;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

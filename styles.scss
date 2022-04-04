@@ -438,7 +438,7 @@ a:hover {
   }
 }
 
-#page1, #page2, #page3, #page4, #page5, #page6{
+#page0, #page1, #page2, #page3, #page4, #page5, #page6{
   display: none;
   min-width: 85vw;
   text-align: center;
@@ -470,7 +470,7 @@ a:hover {
 .services {
   display: flex;
   max-width: 70vw;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
   flex-wrap: wrap;
   margin-top: 5vh;
