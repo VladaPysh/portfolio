@@ -628,21 +628,6 @@ a:hover {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 550px) {
-  .portfolio_item {
-    max-width: 100%;
-  }
-  .overlay-bottom-slide {
-    width: 100%;
-  }
-  .text {
-    font-size: 1.1rem;
-  }
-  #page1, #page2, #page3, #page4, #page5, #page6 {
-    min-width: 100vw;
-  }
-}
-
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -698,10 +683,8 @@ a:hover {
 .close {
   float: right;
   position: relative;
-  top: 15px;
   padding: 5px 10px;
   text-align: center;
-  margin-right: 10px;
   z-index: 3;
   color: black;
   background: white;
@@ -711,10 +694,6 @@ a:hover {
 
 .close a {
   font-size: 1.3rem;
-}
-
-.carousel-control-next {
-  margin-top: 5%;
 }
 
 .btn-primary {
@@ -734,5 +713,23 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+@media screen and (max-width: 550px) {
+  .portfolio_item {
+    max-width: 100%;
+  }
+  .overlay-bottom-slide {
+    width: 100%;
+  }
+  .text h5 {
+    font-size: 1rem;
+  }
+  #page0, #page1, #page2, #page3, #page4, #page5, #page6 {
+    min-width: 100vw;
+  }
+  .close {
+    padding: 2px 5px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
